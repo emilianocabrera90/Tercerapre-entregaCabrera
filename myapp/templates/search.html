@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+</head>
+<body>
+    <h1>Search Authors</h1>
+    <form method="get" action="{% url 'search' %}">
+        <input type="text" name="q" value="{{ query }}" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for author in results %}
+            <li>{{ author.name }} - {{ author.birth_date }}</li>
+        {% empty %}
+            <li>No results found.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_author' %}">Add Author</a>
+    <a href="{% url 'add_book' %}">Add Book</a>
+    <a href="{% url 'add_publisher' %}">Add Publisher</a>
+</body>
+</html>
