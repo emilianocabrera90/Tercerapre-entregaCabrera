@@ -9,21 +9,21 @@
 
 1. Clona el repositorio o descarga el proyecto.
 2. Instala las dependencias:
-    ```bash
-    pip install django
-    ```
+   ```bash
+   pip install django
+   ```
 3. Realiza las migraciones:
-    ```bash
-    python manage.py migrate
-    ```
+   ```bash
+   python manage.py migrate
+   ```
 4. Ejecuta el servidor:
-    ```bash
-    python manage.py runserver
-    ```
+   ```bash
+   python manage.py runserver
+   ```
 
 ## Uso
 
-1. Visita [http://127.0.0.1:8000/insert/](http://127.0.0.1:8000/insert/) para insertar datos.
+1. Visita [http://127.0.0.1:8000/add_book/](http://127.0.0.1:8000/add_book/) para insertar datos.
 2. Visita [http://127.0.0.1:8000/search/](http://127.0.0.1:8000/search/) para buscar datos en la base de datos.
 
 ## Estructura del Proyecto
